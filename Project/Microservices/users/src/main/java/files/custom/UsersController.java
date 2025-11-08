@@ -1,9 +1,9 @@
+package files.custom;
 
 import java.sql.SQLException;
 import javax.sql.DataSource;
 import java.sql.Connection;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,9 +14,9 @@ public class UsersController {
 
     private DataSource dataSource;
 
-    @GetMapping("/users")
+    @GetMapping("")
     public String main() {
-        return "hello";
+        return "Users Microservice";
     }
 
     @PostMapping("lol")

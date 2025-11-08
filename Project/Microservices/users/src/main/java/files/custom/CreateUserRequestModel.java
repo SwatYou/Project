@@ -1,3 +1,4 @@
+package files.custom;
 
 public class CreateUserRequestModel {
     private String firstName;
