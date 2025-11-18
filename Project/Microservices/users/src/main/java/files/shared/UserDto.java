@@ -48,7 +48,4 @@ public class UserDto implements Serializable{
     public void setEncryptedPassword(String encryptedPassword) {
         this.encryptedPassword = encryptedPassword;
     }
-    
-
-    
 }

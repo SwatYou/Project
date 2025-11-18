@@ -1,8 +1,13 @@
 package files.service;
 
-import files.shared.UserDto;
+import org.springframework.security.core.userdetails.ReactiveUserDetailsService;
 
-public interface UsersService {
+import files.shared.UserDto;
+import reactor.core.publisher.Mono;
+
+public interface UsersService extends ReactiveUserDetailsService{
 
     UserDto createUser(UserDto user);
+
+    Mono<UserDto> getUserDetailsByEmail(String email); 
 }
